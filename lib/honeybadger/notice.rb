@@ -230,7 +230,7 @@ module Honeybadger
       :environment_filters, :session_data, :project_root, :url, :ignore,
       :ignore_by_filters, :notifier_name, :notifier_url, :notifier_version,
       :component, :action, :cgi_data, :environment_name, :hostname, :context,
-      :source_extract, :source_extract_radius, :send_request_session
+      :source_extract, :source_extract_radius, :send_request_session, :api_key
 
     # Private: Arguments given in the initializer
     attr_accessor :args
