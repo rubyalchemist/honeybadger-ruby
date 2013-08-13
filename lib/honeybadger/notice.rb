@@ -79,8 +79,12 @@ module Honeybadger
     # The host name where this error occurred (if any)
     attr_reader :hostname
 
+    # The API Key if set by Honeybadger.notify call
+    attr_reader :api_key
+
     def initialize(args)
       self.args         = args
+      self.api_key      = args[:api_key]
       self.exception    = args[:exception]
       self.project_root = args[:project_root]
       self.url          = args[:url] || rack_env(:url)
